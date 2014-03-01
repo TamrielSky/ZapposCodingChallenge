@@ -15,7 +15,7 @@ public class AlarmActivity extends BroadcastReceiver{
 	public void onReceive(Context context, Intent arg1) {
 		// TODO Auto-generated method stub
 		
-	long interval = 10000;
+	long interval = 15*60*1000;
 		 Intent intent = new Intent(context, NotifierService.class);  // <3>
 		    PendingIntent pendingIntent = PendingIntent.getService(context, -1, intent,
 		        PendingIntent.FLAG_UPDATE_CURRENT); // <4>
