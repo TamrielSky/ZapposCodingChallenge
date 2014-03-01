@@ -14,11 +14,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:name=".ZapposApplication"
+        android:name="com.zapcoding.zapposalert.ZapposApplication"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.zapposalert.SearchResultsActivity"
+            android:name="com.zapcoding.zapposalert.SearchResultsActivity"
             android:launchMode="singleTop"
             android:label="@string/app_name" >
             <intent-filter>
@@ -41,7 +41,7 @@
         
          
 
-    <receiver android:name="com.example.zapposalert.AlarmActivity"
+    <receiver android:name="com.zapcoding.zapposalert.AlarmActivity"
               android:enabled="true">
      
       
@@ -50,8 +50,8 @@
       </intent-filter>
     </receiver>	
     
-    <service android:name=".NotifierService" android:enabled="true" android:exported="true" />
-     <activity android:name="com.example.zapposalert.NotifiedProductsActivity"  />
+    <service android:name="com.zapcoding.zapposalert.NotifierService" android:enabled="true" android:exported="true" />
+     <activity android:name="com.zapcoding.zapposalert.NotifiedProductsActivity"  />
     
     
     </application>
